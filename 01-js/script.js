@@ -82,22 +82,6 @@ function salario(){
 }
 
 
-unction salario(){
- let pesoBruto, tara, peso
- let salarioDia
-
- sm = Number(prompt("Digite valor total salário mensal: R$  "))
- dt = Number(prompt("Digite a quantidade de dias trabalhados:  "))
-
- salarioDia = sm / dt
-
- alert ("Valor do dia trabalhado é de: R$  " + salarioDia + " reais")
-
- ss = salarioDia * 5
-
- alert ("o valor do salário semanal é de: R$" + ss + " Reais")
-
-
 
 
 // }

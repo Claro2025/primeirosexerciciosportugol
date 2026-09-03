@@ -1,5 +1,4 @@
- 
-function campeonato(){
+ function campeonato(){
  let vitorias, empates
  let pontos
 
@@ -12,7 +11,7 @@ function campeonato(){
  }
 
 
-function calcado(){
+ function calcado(){
  let calcado, valor
  let valeTroca
 
@@ -22,10 +21,10 @@ function calcado(){
  valeTroca = calcado * valor
 
  alert ("O valor do vale troca é de: R$" + valeTroca + " reais")
-}
+ }
 
 
-function portoes(){
+ function portoes(){
  let clt, estagiario, pj
  let totalFuncionario
 
@@ -36,10 +35,10 @@ function portoes(){
  totalFuncionario = clt + estagiario + pj
 
  alert ("A quantidade de colaboradores devs é de: " + totalFuncionario + " colaboradores devs")
-}
+ }
 
 
-function laranja(){
+ function laranja(){
  let inicial, final
  let venda
 
@@ -49,10 +48,10 @@ function laranja(){
  venda = inicial - final
 
  alert ("Quantidade de laranjas vendidas é de: " + venda + " laranjas")
-}
+ }
 
 
-function igreja(){
+ function igreja(){
  let custoTotal, dizimo
  let debito
 
@@ -62,10 +61,10 @@ function igreja(){
  debito = custoTotal - dizimo
 
  alert ("Valor restande para pagamento despesas mensal é de: R$  " + debito + " reais")
-}
+ }
 
 
-function salario(){
+ function salario(){
  let sm, dt, ss
  let salarioDia
 
@@ -79,22 +78,60 @@ function salario(){
  ss = salarioDia * 5
 
  alert ("o valor do salário semanal é de: R$" + ss + " Reais")
+ }
+
+
+ function frete(){
+ let peso, distancia, volume
+ let valorFrente
+
+ peso = Number(prompt("Digite o peso do produto: "))
+ distancia = Number(prompt("Digite a distancia da entrega: "))
+ volume = Number(prompt("Digite o tamanho do volume: "))
+
+ valorFrente = 15+(2*peso)+(0.05*distancia)+(10*volume)
+
+ alert(" Valor do frente é de: R$" + valorFrente + " Reais" )
+
+ }
+
+
+ function idade(){
+    let idade 
+
+    idade = Number(prompt("Digite a idade do aluno: "))
+
+    if (idade >= 18){
+        alert("Aluno é maior de idade")
+    } else {
+        alert("Aluno não é maior de idade")
+    }
+ }
+
+
+ function senha(){
+    let senha
+
+    senha = Number(prompt("Digite a senha: "))
+    
+    if (senha == 1234){
+        alert("Acesso permitido")
+ } else {
+        alert("Acesso negado")
+    }
+ }
+
+
+ function adivinha(){
+    let numero = Math.ceil(Math.random() * 10);
+// Gera um número aleatório de 1 até 10
+
+let palpite = Number(prompt("Adivinhe o número entre 1 e 10:"));
+
+if (palpite === numero) {
+    alert("🎉 Parabéns! Você acertou!")
+} else {
+    alert("❌ Você errou!");
+    alert("O número era: " + numero);
+ }
 }
-
-
-
-
-// }
-// function frete(){
-// let peso, distancia, volume
-// let valorFrente
-
-// peso = Number(prompt("Digite o peso do produto: "))
-// distancia = Number(prompt("Digite a distancia da entrega: "))
-// volume = Number(prompt("Digite o tamanho do volume: "))
-
-// valorFrente = 15+(2*peso)+(0.05*distancia)+(10*volume)
-
-// alert(" Valor do frente é de: R$" + valorFrente + " Reais" )
-
-// }

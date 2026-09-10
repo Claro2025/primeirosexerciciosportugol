@@ -80,6 +80,22 @@
  alert ("o valor do salário semanal é de: R$" + ss + " Reais")
  }
 
+ 
+
+ function balanca(){
+ let pesoBruto, tara
+ let pesoCarga
+
+ pesoBruto = Number(prompt("Digite o peso bruto do produto: "))
+ tara = Number(prompt("Digite o peso da tara: "))
+ 
+ pesoCarga = pesoBruto - tara
+
+ alert(" O peso da carga é de: " + pesoCarga + " kg" )
+
+ }
+
+
 
  function frete(){
  let peso, distancia, volume
@@ -95,6 +111,11 @@
 
  }
 
+
+  
+
+
+//  EXERCICIO IF ELSE
 
  function idade(){
     let idade 

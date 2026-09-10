@@ -96,7 +96,19 @@
  }
 
 
+ function candidato(){
+ let candidato
+ let chance
 
+ candidato = Number(prompt("Número de vezes que usou o celular: "))
+
+ chance = (0.1 / (1 + 500 * candidato)) * 100
+
+ alert("Chance de aprovação: " + chance.toFixed(4).replace(".", ",") + "%")
+
+ }
+
+  
  function frete(){
  let peso, distancia, volume
  let valorFrente
@@ -107,11 +119,40 @@
 
  valorFrente = 15+(2*peso)+(0.05*distancia)+(10*volume)
 
- alert(" Valor do frente é de: R$" + valorFrente + " Reais" )
+ alert(" Valor do frente é de: R$ " + valorFrente.toFixed(2).replace(".", ",") + " Reais" )
 
+ }
+ function lucro(){
+
+ let bruto, premiacoes, presentes, comissoes
+ let lucro   
+
+ bruto = Number(prompt("Digite o faturamento bruto: R$ "))
+ premiacoes = Number(prompt("Digite o valor das premiações: R$ "))
+ presentes = Number(prompt("Digite o valor dos presentes e agrados: R$ "))
+ comissoes = Number(prompt("Digite o valor das comissões: R$ "))
+
+lucro = bruto - premiacoes - presentes - comissoes
+
+alert("O lucro da Dona Bete foi de R$ " + lucro.toFixed(2).replace(".", ","))
  }
 
 
+ function capitao(){
+    let  suprimentos, ingressos, itens
+    let faturamento_total, lucro, lucro_percentual
+ suprimentos = Number(prompt("Quanto foi gasto em suprimentos e mercadorias: R$ "))
+ ingressos = Number(prompt("Faturamento com venda de ingressos: R$ "))
+ itens = Number(prompt("Faturamento com venda de itens: R$ "))
+
+faturamento_total = ingressos + itens
+lucro = faturamento_total - suprimentos
+lucro_percentual = (lucro / faturamento_total) * 100
+
+alert("Lucro obtido: R$ " + lucro.toFixed(2).replace(".", ","))
+alert("Lucro percentual: " + lucro_percentual.toFixed(2).replace(".", ",") + "%")
+
+ }
   
 
 
